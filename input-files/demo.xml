@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<players>
+    <player jerseyNumber="10">
+        <name>wayne rooney</name>
+        <isRetired>false</isRetired>
+        <yearOfBirth>1985</yearOfBirth>
+    </player>
+    <player jerseyNumber="7">
+        <name>cristiano ronaldo</name>
+        <isRetired>false</isRetired>
+        <yearOfBirth>1985</yearOfBirth>
+    </player>
+    <player jerseyNumber="7">
+        <name>eric cantona</name>
+        <isRetired>true</isRetired>
+        <yearOfBirth>1966</yearOfBirth>
+    </player>
+</players>

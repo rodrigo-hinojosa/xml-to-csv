@@ -1,0 +1,15 @@
+{
+  "name": "sfcc-products-xml-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Hinojosa",
+  "license": "ISC",
+  "dependencies": {
+    "camaro": "^6.2.0",
+    "json2csv": "^5.0.7"
+  }
+}
