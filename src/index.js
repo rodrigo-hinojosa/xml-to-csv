@@ -22,7 +22,7 @@ const { parse } = require('json2csv');
 
     // camaro XML reader
     const template = ['catalog/product', {
-        id: '@product-id',
+        sku: '@product-id',
         online: 'boolean(online-flag = "true")',
         available: 'boolean(available-flag = "true")',
         searchable: 'boolean(searchable-flag = "true")'
