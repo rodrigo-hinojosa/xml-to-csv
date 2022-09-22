@@ -45,7 +45,7 @@ const template = ['players/player', {
 (async () => {
     const fs = require('fs'),
     path = require('path'),
-    filePath = path.join(__dirname, './files/demo.xml');
+    filePath = path.join(__dirname, '../files/demo.xml');
 
     fs.readFile(filePath, {encoding: 'utf-8'}, async (err, data) => {
         if (!err) {
