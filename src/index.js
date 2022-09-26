@@ -18,18 +18,18 @@ const { parse } = require('json2csv');
 (async () => {
     const fs = require('fs'),
     path = require('path'),
-    filePath = path.join(__dirname, '../input-files/sku-pruebas-carga.xml');
+    filePath = path.join(__dirname, '../input-files/skuprueba2609.xml');
 
     // camaro XML reader
     const template = ['catalog/product', {
         sku: '@product-id',
-        online: 'boolean(online-flag = "true")',
-        available: 'boolean(available-flag = "true")',
-        searchable: 'boolean(searchable-flag = "true")'
+        online: 'online-flag',
+        available: 'available-flag',
+        searchable: 'searchable-flag'
     }];
 
     // csv parser
-    const fields = ['id', 'online', 'available', 'searchable'];
+    const fields = ['sku', 'online', 'available', 'searchable'];
     const opts = { fields , quote: ''};
 
     fs.readFile(filePath, {encoding: 'utf-8'}, async (err, data) => {
@@ -38,7 +38,7 @@ const { parse } = require('json2csv');
             console.log('result', result);
             const csv = parse(result, opts);
             console.log('csv', csv);
-            fs.writeFile('../output-files/products.csv', csv, (err) => {
+            fs.writeFile('../output-files/skuprueba2609.csv', csv, (err) => {
                 if (err) console.log(err);
                 console.log("Successfully Written to File.");
               });
